@@ -3,7 +3,7 @@
  * main - prints alpha in lower and upper case
  * Return: Always 0
  */
-int main(0)
+int main(void)
 {
 	char ch;
 
