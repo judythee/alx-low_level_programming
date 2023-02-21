@@ -6,8 +6,10 @@
  * 0 and prints 0 is n is zero
  * -1 and prints - if n is less than zero
  */
-int print_sign(int n)
+int print_sign(void)
 {
+	int c;
+
 	if (n > 0)
 	{
 		_putchar('+');
