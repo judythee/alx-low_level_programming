@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int times_table(void)
 {
 	print_times_table(3);
 	_putchar('\n');
