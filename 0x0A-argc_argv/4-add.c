@@ -3,17 +3,13 @@
 #include <ctype.h>
 #include <string.h>
 	/**
-	 * check_num - check - string there are digit
-	 * @str: array str
+	 * check_num - string there are digit
+	 * @str: array pointer
 	 * Return: Always 0 (Success)
 	 */
 	int check_num(char *str)
 	{
-		/**
-		 * check_num - entry point
-		 * @str: pointer to point
-		 * Declaring variables
-		 */
+		/*Declaring variables*/
 		unsigned int count;
 
 		count = 0;
@@ -29,18 +25,13 @@
 	}
 	/**
 	 * main - Print the name of the program
-	 * @argc: Count arguments
-	 * @argv: Arguments
+	 * @argc: number of arguments
+	 * @argv: array of arguments
 	 * Return: Always 0 (Success)
 	 */
 	int main(int argc, char *argv[])
 	{
-		/**
-		 * main - print the name
-		 * @argc: count arguements
-		 * @argv: arguements
-		 * Declaring variables
-		 */
+		/*Declaring variables*/
 		int count;
 		int str_to_int;
 		int sum = 0;
