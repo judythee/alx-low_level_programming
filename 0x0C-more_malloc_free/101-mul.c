@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #define ERR_MSG "Error"
-
 /**
  * is_digit - checks if a string contains a non-digit char
  * @s: string to be evaluated
@@ -20,7 +19,6 @@ int is_digit(char *s)
 	}
 	return (1);
 }
-
 /**
  * _strlen - returns the length of a string
  * @s: string to evaluate
@@ -44,7 +42,6 @@ void errors(void)
 	printf("Error\n");
 	exit(98);
 }
-
 /**
  * main - multiplies two positive numbers
  * @argc: number of arguments
@@ -59,14 +56,12 @@ int main(int argc, char *argv[])
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
 		errors();
-
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
 	result = malloc(sizeof(int) * len);
 	if (!result)
 		return (1);
-
 	for (i = 0; i <= len1 + len2; i++)
 		result[i] = 0;
 	for (len1 = len1 - 1; len1 >= 0; len1--)
@@ -92,7 +87,6 @@ int main(int argc, char *argv[])
 	}
 	if (!a)
 		_putchar('0');
-
 	_putchar('\n');
 	free(result);
 	return (0);
